@@ -1,0 +1,234 @@
+% Matthew_Bohnsack_resume.tex
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+%\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\resheading}[1]{{\large{\colorbox{MyGrey}{\textbf{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}}
+%\newcommand{\resheading}[1]{{\large{\textbf{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}
+%\newcommand{\resheading}[1]{{\large{\textbf{\textcolor{MyNameColor}{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\usepackage{mathpazo}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{MyNameColor}{rgb}{0.18,0.31,0.31}
+\definecolor{MyGrey}{rgb}{0.85,0.85,0.85}
+\usepackage{url}
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Huge\textcolor{MyNameColor}{{\fontfamily{phv}\selectfont Mathew P.~Bohnsack}}}  & 505-821-9214 (home)\\
+3203 Embudito Dr. NE                                      & 505-284-1661 (office) \\
+Albuquerque, NM 87111                                     & 505-803-8220 (mobile) \\
+                                                          & \texttt{bohnsack@gmail.com} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+%
+% TODO: Objective
+%
+
+\resheading{Education}
+\begin{itemize}
+\item
+    %\ressubheading{University of New Mexico}{Albuquerque, NM}{Master of Science in Computer Engineering}{Jan. 2005 -- September 2011 (expected)}
+    \ressubheading{University of New Mexico}{Albuquerque, NM}{Master of Science in Computer Engineering}{September 2011 (expected)}
+\item
+    %\ressubheading{Iowa State University}{Ames, IA}{Bachelor of Science in Electrical Engineering}{Aug. 1994 -- May 1997}
+    \ressubheading{Iowa State University}{Ames, IA}{Bachelor of Science in Electrical Engineering}{May 1997}
+\item
+    %\ressubheading{North Iowa Area Community College}{Mason City, IA}{Associate of Science in Pre-Engineering}{Aug. 1992 -- May 1994}
+    \ressubheading{North Iowa Area Community College}{Mason City, IA}{Associate of Science in Pre-Engineering}{May 1994}
+\end{itemize}
+
+\vspace{0.1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% START: WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+\begin{itemize}
+\item
+    \ressubheading{Sandia National Laboratories via CDS, Inc.}{Albuquerque, NM}{Sr. Systems Engineer}{July 2008 -- present}
+    \begin{itemize}
+        \resitem{Conduct day-to-day monitoring, operation, troubleshooting, development, user support, etc. on Red Sky and other HPC platforms.}
+        \resitem{Designed and implemented a 48-node Windows HPC cluster on Sun/Oracle blade hardware.}
+        \resitem{Designed and implemented a 16-node Windows HPC cluster on HP blade hardware.}
+        \resitem{Tech lead of a team of 10 system engineers who designed and implemented the Red Sky supercomputer: \#10 on the November 2011 top500 list with 433.5 TFlop/s.  43,008 cores on a 3D torus using QDR InfiniBand.}
+        \resitem{Designed and implemented a large suite of tools used to manage Red Sky.}
+    \end{itemize}
+\item
+    \ressubheading{Pay Lynxs, Inc.}{Albuquerque, NM}{Vice President, Development \& Implementations}{Nov 2007 - July 2008}
+    \begin{itemize}
+        \resitem{Led team of 12 software developers.}
+        \resitem{Designed and implemented SCM processes and infrastructure, with a continuous integration system, automated testing, and daily build and deployment.}
+        \resitem{Conducted database analysis and feature development work with Java, SQL, Perl, Shell, and Ruby.}
+    \end{itemize}
+
+\item
+    \ressubheading{Sandia National Laboratories via CDS, Inc.}{Albuquerque, NM}{Sr. Systems Engineer}{Jan 2003 -- Nov 2007}
+    \begin{itemize}
+        \resitem{Architecture, development, and implementation of Linux solutions with emphasis on clusters for high performance and scientific computing.}
+        \resitem{Led the implementation of a database-driven web application to simplify and automate various account creation and deactivation tasks.}
+        \resitem{Led the specification and development of a Ruby on Rails web application used to track lab-wide estimated and actual HPC system usage.}
+        \resitem{Lead developer on computing.sandia.gov, a website to bring all laboratory HPC platform information into one place.}
+        \resitem{Led the design, construction, and validation of a 280-node / 1,120 CPU DDR-InfiniBand cluster that saw 10.3 TFlop/s of Linpack performance.}
+        \resitem{Member of the Thunderbird implementation team: \#5 on the top500 list - 8,960 compute node CPUs on SDR InfiniBand.}
+        \resitem{Led the design and implementation of a large NIS to LDAP migration.}
+        \resitem{Led the implementation of a Linux cluster with 16 AMD Opteron CPUs and Myrinet 2000 interconnect.}
+        \resitem{Led a team of three developers on an award-winning large-scale dynamic web application used to track classified media. Application built with Perl, HTML::Mason, Apache, and Oracle.}
+        \resitem{Led the implementation of a Linux cluster for the University of New Mexico with 192 PPC970 CPUs using JS20 IBM BladeCenters and Myrinet.}
+        \resitem{Designed and led the implementation of a Linux cluster with 256 CPUs, 128 ports of GigE, 128 ports of Myrinet, 10 TB of SAN-connected disk served via GPFS, and a TPeak of 1.5 TFlop/s.}
+        \resitem{Supervised the construction of two large data centers.}
+        \resitem{Implementation of a 10 TB GPFS storage system with Myrinet, 2 Gb/s Fibre Channel technology, and SATA disks.}
+        \resitem{Designed and implemented a 128-node/256-CPU Linux cluster with 2 Gb/s Myrinet interconnect.}
+        \resitem{Represented Sandia National Laboratories by participation in the ASCI booth at SC2003.}
+        \resitem{Implemented an 8.1 TB GPFS storage system with Myrinet, 2 Gb/s Fibre Channel technology, and Fibre Channel disks.}
+        \resitem{Development and deployment of a Condor Pool across more than 300 Linux workstations.}
+        \resitem{Designed and implemented a 128-node/256-CPU Linux cluster with 2 Gb/s Myrinet interconnect.  Validated system performance by achieving 734.3 GFlop/s in the HPL benchmark.}
+        \resitem{Created Sandia-internal web pages for the Infrastructure Computing Systems Department.}
+        \resitem{Assisted engineers and scientists in porting their codes to Linux clusters.}
+        \resitem{Collaborated in the design and implementation of a 96-port core/edge SAN based on Brocade's 2 Gb/s Fibre Channel technology.}
+        \resitem{Designed and implemented the hardware and OS base for a multi-system implementation of SourceForge Enterprise Edition using RedHat Advanced Server 2.1.}
+        \resitem{Developed a configurable web-based front-end to PBS and performance monitoring utilities for tracking and recording cluster performance and utilization over time.}
+        \resitem{Created health-monitoring scripts that page system administrators when Linux cluster problems are detected.}
+        \resitem{Designed, planned, supervised, and implemented a 256-node Linux cluster.}
+    \end{itemize}
+
+\item
+    \ressubheading{International Business Machines (IBM)}{Ames, IA (and all over the world)}{Linux Cluster Architect}{Feb 2001 -- Jan 2003}
+    \begin{itemize}
+        \resitem{Architecture, development, and implementation of Linux solutions with emphasis on clusters for high performance/scientific computing and high availability.}
+        \resitem{Created xcat.org as a support site for xCAT users.}
+        \resitem{Contributed code and documentation for xCAT.}
+        \resitem{Did problem determination, developed a fix, and conducted regression tests on a 62-node Linux cluster for Los Alamos National Lab in Los Alamos, New Mexico.}
+        \resitem{Implemented a 32-node cluster with 64 2.4 GHz Pentium Xeon CPUs and Gigabit Ethernet interconnect for Pioneer Hi-Bred in Des Moines, Iowa.}
+        \resitem{Provided Linux cluster consulting to Freddie Mac.}
+        \resitem{Upgrade and customization of 4 clusters with a total of 184 compute nodes for Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Implemented a 32-node Linux cluster with Myrinet and 600 GB of GPFS storage for the Naval Oceanographic Office at the Stennis Space Center in Mississippi.}
+        \resitem{Designed and implemented a 64-node Linux cluster with Myrinet and 3 TB of storage for Los Alamos National Lab in Los Alamos, New Mexico.}
+        \resitem{Designed and implemented a 32-node Linux cluster with 64 1.4 GHz PIII compute node CPUs, 4 storage nodes with 8 1.4 GHz PIII CPUs, 4 separate networks including Gigabit Ethernet, and 2 TB of Fibre Channel GPFS storage for the University of Notre Dame in South Bend, Indiana.}
+        \resitem{Designed, build, configured, integrated, and tested 8, 16, 32, and 128-node Linux clusters for Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Developed an internal website for Lucent to track a Linux on S/390 project.}
+        \resitem{Contributed to the development of responses to several large cluster RFPs, including RFPs from a number of National Laboratories.}
+        \resitem{Implemented Apache SSL Proxy customizations for Adventist Health System.}
+        \resitem{Did job scheduler customizations to eliminate user starvation on a cluster for Pioneer Hi-Bred in Des Moines, Iowa.}
+        \resitem{Implemented a 5-node test cluster and upgraded a 32-node cluster to the latest xCAT release for Pearson Technology in Old Tappan, New Jersey.}
+        \resitem{Implemented a 64-node cluster for The University of Georgia in Athens, Georgia.}
+        \resitem{Did customization work on three clusters at Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Implemented a 32-node cluster for Pioneer Hi-Bred in Des Moines, Iowa.}
+        \resitem{Provided consulting and administration services for NCSA on their Platinum and Titan clusters in Champaign, Illinois.}
+        \resitem{Taught xCAT classes for cluster administrators and cluster users at Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Upgraded an existing 16-node cluster to 32 Myrinet-connected nodes and an existing 32-node cluster to 48 Myrinet connected nodes for Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Implemented a 216-node cluster for Amgen in Thousand Oaks, California.}
+        \resitem{Implemented a 160-node cluster with Myrinet for POSDATA in Seoul, South Korea and achieved 184.4 GFlop/s in the HPL benchmark, ranking it \#184 on the November 2001 top500 list.}
+        \resitem{Implemented five 16-node clusters and one 32-node cluster for Sandia National Laboratories in Albuquerque, New Mexico.}
+        \resitem{Created Linux Cluster Architect training documentation and led the training and certification of IBM architects/engineers in this area.}
+        \resitem{Implemented a 19-node cluster for the DOD/airforce in Rochester, Minnesota.}
+        \resitem{Trained personnel from WesternGeco on setup and administration of IBM Linux clusters in Houston, Texas.}
+        \resitem{Implemented an HA cluster for CreditMinders in Austin, Texas.}
+        \resitem{Implemented a 32-node cluster for Pearson Technology in Old Tappan, New Jersey.}
+        \resitem{Implemented a 62-node cluster for Structural Bioinformatics in San Diego California.}
+        \resitem{Assisted in the implementation of an 80-node cluster the Lawrence Berkeley National Lab in Oakland, California. This was ranked \#286 on the June 2001 top500 list.}
+    \end{itemize}
+
+\item
+    \ressubheading{Engineering Animation, Inc. (EAI)}{Ames, IA}{Internet Products Manager and Senior Software Engineer}{March 1999 -- Feb 2001}
+    \begin{itemize}
+        \resitem{Technical lead for e-Vis.com, a secure solution for Internet-enabled visual collaboration across the extended enterprise.}
+        \resitem{Ported e-Vis from Linux to HP-UX and Sun platforms.}
+        \resitem{Performed e-Vis internationalization.}
+        \resitem{Instrumental in achieving partnership with Covisint.}
+        \resitem{Managed team of 10 developers.}
+        \resitem{Collaborated with the executive, sales, business development, marketing, and QA departments.}
+        \resitem{Worked on next generation e-Vis architecture for syndication utilizing XML and XML-RPC, while maintaining and furthering development on the existing architecture.}
+        \resitem{Implemented internal version of Bugzilla to track software defects and enhancement requests.}
+        \resitem{Developed a Perl library to programatically access e-Vis functionality. Managed development of tools using this library for monitoring, load testing, and QA on the site.}
+        \resitem{Designed and executed and automated process to deploy and kept current a fleet of Linux demo laptops running the complete e-Vis system.}
+        \resitem{Planned and managed the execution of site maintenance and upgrades.}
+        \resitem{Developed site architecture and managed the implementation of e-Vis datacenter.}
+        \resitem{Developed an automated build system.}
+        \resitem{Setup and administration of CVS system for software revision control.}
+        \resitem{Initial design and development of e-Vis.com.}
+        \resitem{Conducted research on web search engine technologies.}
+        \resitem{Used SWIG on a C++ CORBA library to build a Perl module to extract data from PDM systems.}
+    \end{itemize}
+
+\item
+    \ressubheading{Engineering Animation, Inc. (EAI)}{Ames, IA}{Network Engineer, Web Developer, Software Engineer}{May 1997 -- March 1999}
+    \begin{itemize}
+        \resitem{Built a web-based C++/Perl middleware that allowed EAI’s visualization software to query and retrieve data from different PDM systems with a consistent interface.}
+        \resitem{Design and implementation with emphasis on integration with customers existing data architecture, usability, speed, and security.}
+        \resitem{Responsible for enterprise LAN/WAN design, implementation, and monitoring including routers, remote access equipment, leased lines, etc.}
+        \resitem{Administration of DNS, NIS, and NNTP services.}
+        \resitem{Implemented security measures with firewalls, router filtering, password checking, etc.}
+        \resitem{Mentored junior web developers.}
+        \resitem{Developed web-based network monitoring tools.}
+        \resitem{Build Perl analysis tools for radius log files.}
+        \resitem{Developed database-driven dynamic Intranet applications.}
+    \end{itemize}
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% END: WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+\begin{description}
+\item[Languages and Programming:] C/C++, Java, Perl, Python, PHP, Ruby, Scheme, \LaTeX, Shell, SQL, Groovy, HTML, Javascript, MATLAB, git, CVS, SVN, Eclipse, Netbeans.
+\item[Operating Systems:] Linux (Ubuntu, RedHat, Gentoo), OpenBSD, Solaris, Windows Server 2008 R2
+\item[Clustering/HPC:] MPI programming, PBS/torque, Maui, slurm, moab, Myrinet, InfiniBand, Windows HPC Server Suite
+\item[Database:] MySQL, Oracle, PostgreSQL, SQLite
+\item[Web:] Apache, Apache C/Perl API, HTML::Mason, mod perl, PHP, Ruby on Rails, Struts, Spring, Tomcat, JBoss.
+\item[Miscellaneous:] Excellent troubleshooting and debugging skills, self-motivated, and highly organized.
+\end{description}
+
+\resheading{Publications}
+\begin{itemize}
+    %\item M.~Bohnsack and M.~Epperson. InfiniBand Monitoring Techniques {\sl SC International Conference for High Performance Computing, Networking, Storage and Analysis}.  November 12--18, 2011, Seattle, WA.
+    \item M.~Epperson, J.~Naegle, J.~Schutt, M.~Bohnsack, S.~Monk, M.~Rajan and D.~Doerfler.  HPC Top 10 InfiniBand Machine\ldots A 3D Torus IB Interconnect on Red Sky {\sl OpenFabrics Alliance 2010 International Sonoma Workshop}.  March 14--17, 2010, Sonoma, CA.
+    \item M.~Bohnsack. Red Sky -- Pushing Towards Petascale with Commodity Systems {\sl LCI Conference on High Performance Clustered Computing}.  March 9--11, 2010, Pittsburgh, PA.
+\end{itemize}
+
+\resheading{Other}
+\begin{itemize}
+    \item Active DOE ``Q''-level security clearance.
+    \item ITIL Foundation certification.
+    \item Amateur Extra Class amateur radio license.
+\end{itemize}
+
+\end{document}
